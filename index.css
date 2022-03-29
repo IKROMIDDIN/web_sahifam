@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-size: cover;
+  display: table;
+  justify-content: center;
+  align-items: center;
+  background: #07252d;
+  width: 100%;
+  height: 100vh;
+  font-family: Montserrat;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+  letter-spacing: 1px;
+  float: left;
+  color: #fff;
+  font-size: 22px;
+  line-height: 80px;
+  padding: 0 100px;
+}
+
+.menu {
+  float: right;
+  padding-top: 18px;
+  line-height: 50px;
+}
+
+.menu ul {
+  outline-style: none;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 0 15px;
+}
+
+ul li:nth-child(5) a {
+  color: #009f8b;
+  border: 1px solid #009f8b;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+h2 {
+  margin-top: 200px;
+  position: relative;
+  padding-top: 100px;
+  font-size: 90px;
+  color: #0e3742;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  -webkit-box-reflect: below -100px linear-gradient(transparent, #0044);
+}
+b {
+  position: relative;
+  color: #0e3742;
+  text-transform: uppercase;
+  /*width: 100%;*/
+  text-align: center;
+  -webkit-box-reflect: below -100px linear-gradient(transparent, #0044);
+}
+
+.mmm {
+  background-color: blue;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+h3 {
+  margin-top: 200px;
+  position: relative;
+  font-size: 50px;
+  color: #0e3742;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below -5px linear-gradient(transparent, #0004);
+}
+h2 span,
+h3 span,
+b span {
+  animation: animate 5s linear infinite;
+}
+h2 span:nth-child(even) {
+  animation-delay: 0.4s;
+}
+b span:nth-child(even) {
+  animation-delay: 0.8s;
+}
+
+@keyframes animate {
+  0%,
+  8%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  0%,
+  80%,
+  90.1%,
+  92%,
+  33%,
+  65.1%,
+  1.03% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  8.1%,
+  18.1%,
+  20.1%,
+  50%,
+  30%,
+  60.1%,
+  0%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 160px #03bcf4, 0 0 400px #03bcf4;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 200px) {
+  body {
+    width: 360px;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .logo {
+    letter-spacing: 1px;
+    float: left;
+    color: #fff;
+    font-size: 22px;
+    line-height: 80px;
+    padding: 0 100px;
+  }
+  .menu {
+    float: right;
+    padding-top: 10px;
+    line-height: 50px;
+  }
+}
